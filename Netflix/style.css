@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/Images/netflix.jpg");
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+}
+
+nav {
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    height: 50px;
+}
+
+nav img {
+    width: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.btn-eng {
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+.btn-sign {
+    padding: 5px;
+    color: white;
+    background-color: red;
+}
+
+.btn-getstart {
+    padding: 3px 24px;
+    color: white;
+    background-color: red;
+}
+
+.input {
+    background-color: black;
+    color: white;
+    padding: 3px 24px;
+
+}
+
+.first {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    color: white;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.fir-img {
+    position: relative;
+    width: 80%;
+    z-index: 10;
+}
+
+.fir-img .video {
+    position: absolute;
+    top: 8.8vw;
+    right: 7%;
+    width: 80%;
+    z-index: -1;
+    
+}
+
+.first>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.separation {
+    margin-top: 30px;
+   
+    border-bottom: 5px solid rgb(55, 53, 53);
+
+}
+
+.second img {
+    max-height: 250px;
+}
+
+.fir-img video {
+    position: absolute;
+    top: 5.8vw;
+    right: 5%;
+    width: 85%;
+    z-index: -1;
+
+}
+
+
+.faq{
+    background-color: black;
+    color: white;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+.faq h1{
+    text-align: center;
+}
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 20px;
+    margin: 34px auto;
+    max-width: 40vw;
+}
+.faqbox:hover{
+    background-color: rgb(29, 25, 25);
+    transition: all 1s ease-out;
+}
+.f-question{
+    color: white;
+    padding: 25px 0;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 70vw;
+    margin: auto;
+    margin-bottom: 34px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+}
+
+/* break point */
+
+@media (max-width:768px) {
+    .first {
+        display: block;
+        width: 80%;
+        /* justify-content: center; */
+        color: white;
+        margin: auto;
+        /* align-items: center; */
+        justify-content: center;
+        font-size: 30px;
+    }
+    
+    .fir-img {
+        position: relative;
+        width: 80%;
+        z-index: 10;
+    }
+    
+    .fir-img .video {
+        position: absolute;
+        top: 8.8vw;
+        right: 7%;
+        width: 80%;
+        z-index: -1;
+        
+    }
+    
+    .first>div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .separation {
+        margin-top: 30px;
+       
+        border-bottom: 5px solid rgb(55, 53, 53);
+    
+    }
+    
+    .second img {
+        max-height: 250px;
+    }
+    
+    .fir-img video {
+        position: absolute;
+        top: 5.8vw;
+        right: 5%;
+        width: 85%;
+        z-index: -1;
+    
+    }
+
+    .faqbox{
+        display: flex;
+        justify-content: space-between;
+        background-color: gray;
+        padding: 20px;
+        margin: 34px auto;
+        max-width: 70vw;
+    }
+    
+}
+
+
+@media (min-width: 600px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .footer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
